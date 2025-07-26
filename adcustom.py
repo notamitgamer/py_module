@@ -80,18 +80,18 @@ def factorial(inp) :
         print(f'Error : An unexpected error happened : {error}')
         return None
     
-# permudation function
+# permutation function
 
-def permudation(total_item,chosen_item) : 
+def permutation(total_item,chosen_item) : 
     """
-    Calculates the number of permudations p(n, k).
+    Calculates the number of permutations p(n, k).
 
     Args:
         total_item = the total number of distinct items in the set
         chosen_item = the number of items to be arranged or chosen from the set at a time
     
     Returns:
-        The number of permudations.
+        The number of permutations.
         None if the input is not valid or any error occurs.
     """
     # trying to check if the inputs are a valid integer or not.
@@ -111,7 +111,7 @@ def permudation(total_item,chosen_item) :
     if k > n : 
         print('Error : Chosen item should be lower than Total item.')
         return None
-    # main logic for permudation
+    # main logic for permutation
     try : 
         fact_n = factorial(n)
         fact_n_k = factorial(n-k)
